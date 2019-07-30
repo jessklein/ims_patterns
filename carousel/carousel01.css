@@ -1,0 +1,127 @@
+/* CODELIBENTRY_ENTRY: 38 */
+
+/* Slick Resets */
+#home-main-content button:focus,
+#home-main-content .slick-slider div:focus,
+#home-main-content .slick-slider a:focus {
+    outline: none !important;
+}
+#home-main-content button::-moz-focus-inner {
+    border: 0;
+}
+#home-main-content {
+  position: relative;
+  z-index: 0;
+}
+
+/* ------- CONTENT ------- */
+
+/* Outer wrap; contains arrows */
+#rotating-main-content {
+    width: 800px;
+    max-width: 100%;
+    margin: auto;
+    padding: 20px 35px; /* Adding left and right outer padding here for arrows to live absolutely positioned */
+}
+
+/* Inner wrap; content only — no arrows */
+#home-main-content .slide-main-content {
+  padding: 0 40px;
+}
+
+/* Hide view all links not in view to prevent clickable invisible links */
+#home-main-content .slick-slide .view-all {
+  visibility: hidden;
+}
+#home-main-content .slick-slide.slick-current .view-all {
+  visibility: visible;
+}
+
+/* ------- DOTS ------- */
+
+#home-main-content ul.slick-dots {
+    margin: auto;
+    text-align: center;
+}
+#home-main-content .slick-dots li {
+    display: inline-block;
+  	padding: 0 10px;
+}
+#home-main-content .slick-dots li button {
+    font-size: 1px;
+    line-height: 1px;
+    color: transparent;
+    text-indent: -9999em;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    padding: 0;
+    background-color: #222;
+    transition: 0.2s;
+}
+#home-main-content .slick-dots li button:hover,
+#home-main-content .slick-dots li.slick-active button,
+#home-main-content .slick-dots li button:active {
+    background-color: #aaa;
+}
+
+/* ------- ARROWS ------- */
+
+#home-main-content .slick-slider .slick-arrow {
+    position: absolute;
+    top: 50%;
+    -ms-transform: translate(0, -50%);
+    -webkit-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+    background-color: transparent;
+    background-size: contain;
+    background-repeat: no-repeat;
+    border-radius: 0;
+    color: transparent;
+    font-size: 1px;
+    line-height: 1px;
+    height: 57px;
+    width: 35px; /* Same width as left/right padding of #rotating main content. This sets the arrow right on the edge of the div using left: 0; and right: 0; */
+    padding: 0;
+    z-index: 10;
+    opacity: 1;
+    transition: 0.2s;
+}
+#home-main-content .slick-slider .slick-prev {
+    background-color: transparent;
+    background-image: url('/assets/templates/main/images/icons/arrow-left.png');
+	background-position: right center;
+    left: 0;
+}
+#home-main-content .slick-slider .slick-next {
+    background-color: transparent;
+    background-image: url('/assets/templates/main/images/icons/arrow-right.png');
+    background-position: left center;
+    right: 0;
+}
+#home-main-content .slick-slider .slick-arrow:hover,
+#home-main-content .slick-slider .slick-arrow:active {
+    opacity: 0.6;
+}
+
+/* ------- MEDIA QUERIES ------- */
+
+@media all and (max-width: 800px) {
+  #home-main-content .slide-main-content {
+    padding: 0 15px;
+  }
+  #rotating-main-content {
+    padding: 20px;
+  }
+  #home-main-content .slick-slider .slick-arrow {
+	width: 20px;
+  }
+}
+@media all and (max-width: 570px) {
+  #rotating-main-content {
+    padding: 20px 10px;
+  }
+  #home-main-content .slick-slider .slick-arrow {
+	width: 15px;
+  }
+}

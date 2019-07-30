@@ -1,0 +1,354 @@
+/* --- ANIMATIONS START --- */
+
+/* --- PATTERNS DEFAULT STYLING --- */
+.animation.scale-in-center p,
+.animation.flip-in p,
+.animation.shrink p {
+  margin: 0;
+  padding: 10px;
+}
+
+.animation {
+  margin-bottom: 10px;
+}
+
+
+/* --- ON PAGE LOAD/ENTRANCE --- */
+
+@keyframes slideInLeft {
+	0% {
+		left: -1100px;
+	}
+	100% {
+		left: 0;
+	}
+}
+
+.animation.slide-in-left {
+  left: -1100px;
+  position: relative;
+}
+
+.loaded .animation.slide-in-left,
+.no-js .animation.slide-in-left {
+  animation: slideInLeft 0.8s ease both 0.3s;
+}
+
+@keyframes scale-in-center {
+ 0% {
+  -webkit-transform:scale(0);
+  transform:scale(0);
+  opacity:1
+  animation-timing-function: ease-out;
+ }
+ 50% {
+ }
+ 100% {
+  -webkit-transform:scale(1);
+  transform:scale(1);
+  opacity:1;
+ }
+}
+
+.animation.scale-in-center {
+  visibility: hidden;
+
+  background-color: #797979;
+  display: inline-block;
+  text-align: center;
+}
+
+.loaded .animation.scale-in-center,
+.no-js .animation.scale-in-center {
+  visibility: visible;
+  -webkit-animation: scale-in-center .8s cubic-bezier(.25,.46,.45,.94) both;
+  animation: scale-in-center .8s cubic-bezier(.25,.46,.45,.94) both;
+}
+
+
+@keyframes fadeIn {
+ from {
+  opacity:0
+ }
+ to {
+  opacity:1
+ }
+}
+
+.animation.fade-in {
+  visibility: hidden;
+}
+
+.loaded .animation.fade-in,
+.no-js .animation.fade-in {
+  visibility: visible;
+  animation: fadeIn 1s both;
+}
+
+/* --- ON SCROLL --- */
+
+@keyframes flipInY {
+ from {
+  transform:perspective(400px) rotate3d(0,1,0,90deg);
+  animation-timing-function: ease-in;
+  opacity: 0;
+ }
+ 40% {
+  transform:perspective(400px) rotate3d(0,1,0,-20deg);
+  animation-timing-function: ease-in;
+ }
+ 60% {
+  transform:perspective(400px) rotate3d(0,1,0,10deg);
+  opacity: 1;
+ }
+ 80% {
+  transform:perspective(400px) rotate3d(0,1,0,-5deg);
+ }
+ to {
+  transform:perspective(400px);
+ }
+}
+
+.animation.flip-in {
+  visibility: hidden;
+
+  display: inline-block;
+  background-color: #797979;
+}
+
+.animation.flip-in.animated {
+  visibility: visible;
+  -ms-animation: flipInY .8s ease both;
+  -webkit-animation: flipInY .8s ease both;
+  animation: flipInY .8s ease both;
+}
+
+
+@keyframes van-slide-in {
+  0% {
+    transform: translateX(-750px) skewX(0);
+    opacity: 0.75;
+  }
+  95% {
+    transform: translateX(0px) skewX(-15deg);
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}
+
+.animation.van-slide-in {
+  visibility: hidden;
+}
+
+.animation.van-slide-in.animated {
+  visibility: visible;
+  animation: van-slide-in 1s ease both;
+}
+
+
+/* --- ON HOVER --- */
+
+.hovers {
+  display: flex;
+  flex-direction: column;
+}
+
+.hovers .animation {
+  width: 50%;
+}
+
+.animation.color-slide-down {
+  -ms-transform:perspective(1px) translateZ(0);
+  -webkit-transform:perspective(1px) translateZ(0);
+  transform:perspective(1px) translateZ(0);
+  transition:all .3s;
+
+  display: inline-block;
+  padding: 10px;
+  border: 2px solid #000;
+}
+
+.animation.color-slide-down p {
+  position: relative;
+  margin:0;
+}
+
+.animation.color-slide-down::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #0ce6ce;
+    -ms-transform: scaleY(0);
+    -webkit-transform: scaleY(0);
+    transform: scaleY(0);
+    -ms-transform-origin: 50% 0;
+    -webkit-transform-origin: 50% 0;
+    transform-origin: 50% 0;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+    -webkit-transition-duration: .3s;
+    transition-duration: .3s;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+}
+
+.animation.color-slide-down:active::before,
+.animation.color-slide-down:hover::before {
+    -ms-transform: scaleY(1);
+    -webkit-transform: scaleY(1);
+    transform: scaleY(1);
+}
+
+
+
+
+.animation.color-slide-left {
+  -ms-transform:perspective(1px) translateZ(0);
+  -webkit-transform:perspective(1px) translateZ(0);
+  transform:perspective(1px) translateZ(0);
+  transition:all .5s;
+
+  display: inline-block;
+  padding: 10px;
+  border: 2px solid #000;
+}
+
+.animation.color-slide-left p {
+  position: relative;
+  margin:0;
+}
+
+.animation.color-slide-left::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #0ce6ce;
+    -ms-transform: scaleX(0);
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -ms-transform-origin: 0 50%;
+    -webkit-transform-origin: 0 50%;
+    transform-origin: 0 50%;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+    -webkit-transition-duration: .5s;
+    transition-duration: .5s;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+}
+
+.animation.color-slide-left:active::before,
+.animation.color-slide-left:hover::before {
+    -ms-transform: scaleX(1);
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+}
+
+
+
+
+.animation.color-spread-center {
+  display: inline-block;
+  position: relative;
+  margin: 20px auto;
+}
+
+.animation.color-spread-center a {
+  display: block;
+  border-radius: 50%;
+  transition: 0.7s ease;
+  padding: 10px;
+  background-color: #ffb700;
+  -webkit-transition: .7s ease;
+  transition: .7s ease;
+  position: relative;
+  width: 100%;
+  text-align: center;
+  max-width: 217px;
+  text-decoration: none;
+}
+
+.animation.color-spread-center a:active,
+.animation.color-spread-center a:focus,
+.animation.color-spread-center a:hover {
+  background-color: #127700;
+}
+
+.animation.color-spread-center a .text-wrap::after {
+    content: '';
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #0073e8;
+    border-radius: 100%;
+    -webkit-transform: scale(0);
+    transform: scale(0);
+    -webkit-transition-property: transform;
+    transition-property: transform;
+    -webkit-transition-duration: .5s;
+    transition-duration: .5s;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+}
+
+.animation.color-spread-center a:active .text-wrap::after,
+.animation.color-spread-center a:focus .text-wrap::after,
+.animation.color-spread-center a:hover .text-wrap::after {
+    -webkit-transform: scale(2);
+    transform: scale(2);
+}
+
+.animation.color-spread-center a .text-wrap {
+  position: relative;
+  border-radius: 50%;
+  overflow: hidden;
+  -webkit-mask-image: -webkit-radial-gradient(white,#000);
+  -webkit-transition: border .7s ease,color .5s ease;
+  transition: border .7s ease,color .5s ease;
+  border: 8px solid #1d2c4b;
+  padding: 60px 15px 60px;
+  background-color: #fff;
+  display: block;
+}
+
+.animation.color-spread-center a:active .text-wrap,
+.animation.color-spread-center a:focus .text-wrap,
+.animation.color-spread-center a:hover .text-wrap {
+    color: #fff;
+    border-color: #fff;
+}
+
+.animation.color-spread-center a .text-wrap span {
+  position: relative;
+  z-index: 10;
+  font-size: 18px;
+  text-decoration: none;
+}
+
+.animation.shrink {
+  background-color: #797979;
+  display: inline-block;
+  text-align: center;
+  transition:.5s;
+  transition-timing-function:ease-out;
+}
+
+.animation.shrink:active,
+.animation.shrink:hover {
+ background-color:#2e77b2;
+ transform:scale(.9);
+ transition:.3s ease-in-out;
+}
+
+/* --- ANIMATIONS END --- */

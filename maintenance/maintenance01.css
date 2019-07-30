@@ -1,0 +1,36 @@
+.ma-image {
+  height: 100px;
+  width: 100%;
+  margin: 0 auto;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url(/assets/templates/main/images/icons/ma-image.png);
+}
+.ma-points {
+  /*display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; 
+  -webkit-box-pack: center; 
+  -ms-flex-pack: center; 
+  justify-content: center;*/
+  text-align: center;
+}
+.ma-points li {
+  position: relative;
+  padding-left: 40px;
+  margin-right: 20px;
+  margin-left: 20px;
+  display: inline-block;
+}
+.ma-points li:before {
+  content: '';
+  background-image: url(/assets/templates/main/images/icons/ma-bullet.png);
+  background-size: 80%;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100%;
+  width: 40px;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}

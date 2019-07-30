@@ -1,0 +1,60 @@
+/* Footer 1 */
+#container-footer .secondary-tools {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+#footer-left, #footer-right {
+  -ms-flex-preferred-size: 50%;
+  flex-basis: 50%;
+  text-align: center;
+}
+#newsletter-signup .secondary-tools {
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+#footer-final .pattern-width-limiter {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+/* Content pattern stuffs */
+#payments ul {
+  text-align: center;
+}
+p.imarket-link {
+  text-align: right;
+}
+#newsletter-signup .secondary-tools-heading {
+  margin-right: 20px;
+}
+
+@media all and (max-width: 570px) {
+  #container-footer .secondary-tools {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+  #footer-left, #footer-right {
+    -ms-flex-preferred-size: 100%;
+    flex-basis: 100%;
+  }
+  #footer-final .pattern-width-limiter {
+    display: block;
+  }
+  p.copyright, p.imarket-link {
+    text-align: center;
+  }
+}

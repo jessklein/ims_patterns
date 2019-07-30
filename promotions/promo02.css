@@ -1,0 +1,124 @@
+/* PROMO2 */
+
+/* Sidebar */
+#promotions-secondary .left-promos {
+	background-image: url(/assets/templates/main/images/image.png);
+	height: 170px;
+	width: 100%;
+	background-size: contain;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+#promotions-secondary .secondary-tools-heading {
+	text-align: center;
+	font-size: 2.5em;
+}
+#promotions-secondary .secondary-tools li a {
+    display: block;
+    padding: 10px 10px 10px 100px;
+    position: relative;
+    border: 3px dashed #00cc0d;
+    min-height: 106px;
+    width: 100%;
+}
+#promotions-secondary .secondary-tools li a:hover {
+	border-color: #FF0000;
+}
+#promotions-secondary .view-all {
+	text-align: center;
+}
+/* Inner Content Pattern */
+#promotions-secondary .secondary-tools li a .promo-image {
+	position: absolute;
+	top: 10px;
+	left: 10px;
+	height: 80px;
+	width: 80px;
+	background-color: #94b6ff;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+#promotions-secondary .secondary-tools li a .promo-title {
+	display: block;
+	font-size: 1.2em;
+}
+#promotions-secondary .secondary-tools li a .promo-teaser {
+	display: block;
+	font-size: 1em;
+}
+/* End Inner Content Pattern */
+
+@media all and (max-width: 800px) {
+	#promotions-secondary {
+		max-width: 66%;
+		margin: 0 auto;
+	}
+}
+@media all and (max-width: 570px) {
+	#promotions-secondary {
+		max-width: 100%;
+		margin: 0 auto;
+	}
+}
+
+/* Larger than Mobile */
+@media all and (min-width: 571px) {
+	.full-width #promotions-secondary .secondary-tools ul.promotions {
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-pack: justify;
+		-ms-flex-pack: justify;
+		justify-content: space-between;
+	}
+	.full-width #promotions-secondary .secondary-tools li {
+	    width: 48%;
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+	}
+	#promotions-secondary {
+	    max-width: 100%;
+	    margin: 0 auto;
+	}	
+}
+
+/* Tablet */
+@media all and (min-width: 571px) and (max-width: 800px) {
+	#promotions-secondary .secondary-tools ul.promotions {
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-pack: justify;
+		-ms-flex-pack: justify;
+		justify-content: space-between;
+	}
+	#promotions-secondary .secondary-tools li {
+	    width: 48%;
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+	}	
+}
+
+/* Full width */
+@media all and (min-width: 801px) {
+	.full-width #promotions-secondary .secondary-tools {
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-align: center;
+		-ms-flex-align: center;
+		align-items: center;
+	}
+	.full-width #promotions-secondary .secondary-tools > div.left-promos {
+		width: 32%;
+		margin-right: 1%;
+	}
+	.full-width #promotions-secondary .secondary-tools-heading {
+		text-align: left;
+	}
+	.full-width #promotions-secondary .view-all {
+		text-align: left;
+	}
+}

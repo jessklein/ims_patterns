@@ -1,0 +1,60 @@
+/* Service Area 1 */
+#service-area-list.secondary-tools-outer {
+  background-image: url(/assets/templates/main/images/backgrounds/reviews-background-image.jpg);
+  background-position: center center;
+  background-size: cover;
+}
+#service-area-list > .pattern-width-limiter .secondary-tools {
+  text-align: center;
+}
+p.sa-secondary-text {
+  margin-bottom: 0px;
+}
+@media all and (min-width: 801px) {
+  .full-width #service-area-list {
+    background-position: right center;
+  }
+  .full-width #service-area-list > .pattern-width-limiter .secondary-tools {
+    width: 50%; 
+  }
+}
+@media all and (max-width: 800px) {
+  .full-width #service-area-list > .pattern-width-limiter .secondary-tools {
+    width: 80%;
+    margin: 0 auto;
+  } 
+}
+@media all and (max-width: 570px) {
+  .full-width #service-area-list > .pattern-width-limiter .secondary-tools {
+    width: 100%;
+  } 
+}
+
+/*  Content Pattern Towns List */
+#sidebar-content-bottom .sa-city-wrapper .secondary-tools,
+.full-width .sa-city-wrapper .secondary-tools {
+  background-color: transparent;
+}
+.sa-city-wrapper {
+  margin-top: 20px;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.72);
+}
+.service-cities {
+  display: inline;
+}
+.secondary-tools ul.service-cities li {
+    display: inline-block;
+    padding: 0px;
+    margin: 3px 10px;
+}
+.secondary-tools ul.service-cities li.sa-read-more {
+  display: block;
+}
+#service-area-list li a:link,
+#service-area-list li a:visited {
+    display: inline-block;
+    padding: 5px;
+    margin: 0px -5px;
+}
+/*  End Content Pattern Towns List */

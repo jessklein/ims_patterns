@@ -1,0 +1,84 @@
+.mf-title, .mf-subtitle, .mf-extra {
+	display: block;
+	text-align: center;
+}
+#mini-form fieldset:first-of-type ul {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: justify;
+	-ms-flex-pack: justify;
+	justify-content: space-between;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: row;
+	flex-direction: row;
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap;
+}
+#mini-form fieldset:first-of-type ul li {
+	width: 100%;
+}
+#mini-form .secondary-tools {
+	position: relative;
+}
+.full-width #mini-form fieldset:first-of-type li {
+	width: calc(25% - 8px);
+	margin-left: 10px;
+}
+.full-width #mini-form fieldset:first-of-type li:first-of-type {
+	margin-left: 0px;
+}
+.full-width #mini-form fieldset:first-of-type li:last-of-type {
+	width: 	100%;
+	margin: 0px;
+}
+
+@media all and (max-width: 800px) {
+	#mini-form .secondary-tools fieldset:first-of-type ul li {
+		width: calc(50% - 5px);
+	}
+	#mini-form .secondary-tools fieldset:first-of-type ul li:nth-of-type(odd) {
+		margin-left: 0px;
+	}
+	#mini-form .secondary-tools fieldset:first-of-type ul li:last-of-type {
+		width: 	100%;
+		margin: 0px;
+	}
+}
+
+@media all and (max-width: 800px) and (min-width: 571px) {
+	#mini-form ul.submit li {
+		text-align: right;
+	}
+	#mini-form .mf-extra {
+		position: absolute;
+		bottom: 0px;
+		left: 0px;
+		line-height: 50px;
+	}	
+}
+
+@media all and (min-width: 571px) {
+	.full-width #mini-form ul.submit li {
+		text-align: right;
+	}
+	.full-width #mini-form .mf-extra {
+		position: absolute;
+		bottom: 0px;
+		left: 0px;
+		line-height: 50px;
+	}
+}
+
+@media all and (max-width: 570px) {
+	#mini-form .secondary-tools fieldset:first-of-type ul li {
+		width: 100%;
+		margin: 0px;
+	}
+	#mini-form .mf-extra, #mini-form ul.submit li {
+		text-align: center;
+		position: static;
+		display: block;
+	}
+}	

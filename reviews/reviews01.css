@@ -1,0 +1,33 @@
+#testimonials-secondary.secondary-tools-outer {
+  background-image: url(/assets/templates/main/images/backgrounds/reviews-background-image.jpg);
+  background-position: center center;
+  background-size: cover;
+}
+/* -- Content -- */
+#sidebar-content-bottom .secondary-tools, .full-width .secondary-tools {
+  background-color: rgba(248,248,248,0.8);
+}
+#testimonials-secondary .secondary-tools {
+  text-align: center;
+  padding: 20px;
+}
+/* -- End Content -- */
+@media all and (min-width: 801px) {
+  .full-width #testimonials-secondary {
+    background-position: right center;
+  }
+  .full-width #testimonials-secondary .secondary-tools {
+    width: 50%; 
+  }
+}
+@media all and (max-width: 800px) {
+  #testimonials-secondary.secondary-tools-outer .secondary-tools {
+    width: 80%;
+    margin: 0 auto;
+  } 
+}
+@media all and (max-width: 570px) {
+  #testimonials-secondary.secondary-tools-outer .secondary-tools {
+    width: 100%;
+  } 
+}

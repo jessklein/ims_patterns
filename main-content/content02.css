@@ -1,0 +1,56 @@
+.mc-title, .mc-subtitle {
+  text-align: center;
+}
+
+@media all and (min-width: 571px) {
+  .main-content-wrap {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
+  .inner-main-content {
+    /* Subtract the even or odd margin amount below from 50% */
+    flex-basis: calc(50% - 10px);
+    /* To add padding, use right + left padding in the ms flex-basis calculation
+    -ms-flex-preferred-size: calc(50% - 50px);
+    padding: 20px;
+    */
+    text-align: left;
+    margin-bottom: 20px;
+  }
+  .inner-main-content:nth-of-type(odd) {
+    margin-right: 10px;
+  }
+  .inner-main-content:nth-of-type(even) {
+    margin-left: 10px;
+  }
+  .inner-main-content:last-of-type {
+    margin-right: 0px;
+  }  
+  .inner-main-content img {
+    max-width: 100%;
+  }
+  .inner-main-content .image-wrap,
+  .inner-main-content h2,
+  .inner-main-content .view-all {
+    display: block;
+    text-align: center;
+  }
+}
+
+@media all and (max-width: 570px) {
+  .inner-main-content:nth-child(odd) .image-wrap,
+  .inner-main-content:nth-child(even) .image-wrap {
+    float: right;
+    padding: 0px 0px 10px 10px;
+  }
+  .image-wrap img {
+    width: 120px;
+    height: auto;
+  }
+}

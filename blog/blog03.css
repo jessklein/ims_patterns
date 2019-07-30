@@ -1,0 +1,73 @@
+
+@media all and (min-width: 801px) {
+  .full-width #blog-module .pattern-width-limiter {
+    position: relative;
+    z-index: 1;
+  }
+  .full-width #blog-module .secondary-tools {
+    width: 58.3%;
+  }
+  .full-width #blog-module {
+    position: relative;
+  }
+  .full-width #blog-module::before {
+    content: '';
+    width: 50%;
+    height: 100%;
+    background-image: url("../../images/hero/hero.jpg");
+    background-size: cover;
+    background-position: right center;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 0;
+  }
+}
+#blog-module .bl-container .blog-post {
+  position: relative;
+}
+
+/* Content Pattern */
+.blog-post .blog-date {
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: block;
+  background-color: #fff;
+  border-radius: 5px;
+}
+.blog-post .month {
+  display: block;
+  padding: 5px 15px;
+  text-transform: uppercase;
+  background-color: #492900;
+  border-radius: 5px 5px 0 0;
+  font-size: 20px;
+  font-weight: bold;
+  color: #fff;
+}
+.blog-post .day-of-week {
+  display: block;
+  text-align: center;
+  font-size: 36px;
+  padding: 10px 0;
+  color: #492900;
+  background-color: #eadcc3;
+  border-radius: 3px;
+}
+.blog-post .view-all {
+  text-align: left;
+}
+.blog-post .content {
+  padding-left: 90px;
+}
+
+@media all and (max-width: 800px) {
+  .blog-post .month {
+    padding: 5px 8px;
+  }
+  .blog-post .content {
+    padding-left: 70px;
+  }
+}
+/* End of Content Pattern */

@@ -1,0 +1,140 @@
+/*
+-----------------------------------------------
+imarketsolutions.com 
+Stylesheet: Home.css
+Created: 8/28/2013
+Author:  Ben Schiling
+Organization:	iMarket Solutions
+----------------------------------------------- */
+
+/*------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/* --- BEGIN HOMEPAGE --------------------------------------------------------------------------------------------------------------------------------- */
+
+
+
+/* --- HOMEPAGE --------------------------------------------------------------------------------------------------------------------------------- */
+/* --- BANNER --------------------------------------------------------------------------------------------------------------------------------- */
+
+#container-banner {
+	position: relative;
+	z-index: 0;
+}
+
+#banner {
+	height:100%;
+}
+
+#banner .banner-slide {
+	width: 100%;
+	background-size: cover;
+	background-position: center center;
+	background-repeat: no-repeat;
+	min-height: 600px;
+	width: 100%;
+}
+
+#banner .banner-slide a {
+	display:block;
+	/*height:100%;*/
+	text-decoration: none; 
+	/*width:100%;*/
+}
+
+#banner .banner-slide img {
+	display: block;
+	width:100%;
+	height: auto;
+}
+
+.banner-text {
+	background-color: rgba(0,0,0,.5);
+	bottom:0;
+	display:block;
+	left:0;
+	padding: 10px;
+	position:absolute;
+	width:100%;
+}
+
+.banner-text span {
+	color: #FFF; 
+	display:block;
+	line-height:1.1em;
+	margin: 0;
+}
+
+.banner-text span.banner-text-title {
+	font-size: 3em;
+}
+
+.banner-text span.banner-text-description {
+	font-size: 1.6em;
+}
+
+/* jQuery Cycle CSS */
+
+/*#banner-cycle-pager {
+  bottom: 5px;
+  position: absolute;
+  right: 5px;
+  z-index:1000;
+}
+
+#banner-cycle-pager span {
+	background-color: #FFF;
+	border-radius:100%;
+	cursor: pointer;
+	display:inline-block;
+	font-size:0; 
+	margin:5px;
+	height:22px;
+	width:22px;
+	border:2px solid #FFF;
+	transition: all 0.3s ease; 
+}
+
+#banner-cycle-pager span.cycle-pager-active {
+	background-color: #00cc0d;
+}
+
+#banner-cycle-pager span:hover {
+	opacity:.8;
+}*/
+
+
+
+/* --- HOMEPAGE --------------------------------------------------------------------------------------------------------------------------------- */
+/* --- LAYOUTS/ANIMATION --------------------------------------------------------------------------------------------------------------------------------- */
+
+@media all and (max-width:1025px) {
+
+} 
+
+@media all and (max-width:800px) {
+	/* jQuery Cycle CSS */
+	/*#banner {
+		background-color: rgba(0,0,0,.5);
+	}
+	.banner-text {
+		background-color: transparent;
+		position:static; 
+	}
+	#banner-cycle-pager {
+		background-color: rgba(0,0,0,.5);
+		position: static;
+		text-align: center; 
+	}*/
+} 
+
+@media all and (max-width:570px) {
+	/* jQuery Cycle CSS */
+	/*#banner .banner-slide img {
+	  left: -25%;
+	  position: relative;
+	  width: 150%;
+	}*/
+} 
+
+
+/* --- END HOMEPAGE --------------------------------------------------------------------------------------------------------------------------------- */
+/*------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/

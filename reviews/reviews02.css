@@ -1,0 +1,25 @@
+#testimonials-secondary {
+  text-align: center;
+}
+@media all and (min-width: 901px) {
+  .full-width #testimonials-secondary .ts-middle {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+  .full-width #testimonials-secondary .ts-middle .ts-title {
+    width: 20%;
+  }
+  .full-width #testimonials-secondary .ts-middle .view-all {
+    width: 20%;
+  }
+  .full-width .rotating-content {
+    max-width: 60%;
+  }
+}

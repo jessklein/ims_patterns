@@ -1,0 +1,51 @@
+#quicklinks .secondary-tools {
+	max-width: 510px;
+	margin: 0 auto;
+}
+#quicklinks .secondary-tools-heading {
+	text-align: center;
+}
+#quicklinks div.quicklink-container > a {
+	width: 100%;
+	min-height: 62px;
+	margin: 2px 0px;
+	padding: 15px 15px 15px 75px;
+	background-color: #e8e8e8;
+	position: relative;
+	text-align: left;
+	text-decoration: none;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: column;
+	flex-direction: column;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: center;	
+}
+#quicklinks div.quicklink-container > a:hover,
+#quicklinks div.quicklink-container > a:active {
+	background-color: #b3b3b3;
+}
+#quicklinks div.quicklink-container > a:first-of-type {
+	margin-left: 0px;
+}
+#quicklinks div.quicklink-container > a:last-of-type {
+	margin-bottom: 0px;
+}
+
+/* Inner Content Pattern */
+#quicklinks a div.ql-image {
+	height: 100%;
+	width: 62px;
+	position: absolute;
+	top: 0px;
+	left:0px;
+	background-size: contain;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-image: url(/assets/templates/main/images/quicklinks/image.png);
+}
+/* Inner Content Pattern */

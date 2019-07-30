@@ -1,0 +1,82 @@
+/* PROMO2 */
+
+/* Sidebar */
+#promotions-secondary .secondary-tools-heading {
+  text-align: center;
+  font-size: 2.5em;
+}
+#promotions-secondary .secondary-tools li a {
+    display: block;
+    padding: 10px 10px 10px 100px;
+    position: relative;
+    border: 3px dashed #00cc0d;
+    min-height: 106px;
+    width: 100%;
+}
+#promotions-secondary .secondary-tools li a:hover {
+  border-color: #FF0000;
+}
+#promotions-secondary .view-all {
+  text-align: center;
+}
+/* Inner Content Pattern */
+#promotions-secondary .secondary-tools li a .promo-image {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  height: 80px;
+  width: 80px;
+  background-color: #94b6ff;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+#promotions-secondary .secondary-tools li a .promo-title {
+  display: block;
+  font-size: 1.2em;
+}
+#promotions-secondary .secondary-tools li a .promo-teaser {
+  display: block;
+  font-size: 1em;
+}
+/* End Inner Content Pattern */
+
+/* Tablet */
+@media all and (min-width: 571px) and (max-width: 800px) {
+  #promotions-secondary .secondary-tools ul.promotions {
+    width: 83%;
+    margin: 0 auto;
+  }
+}
+
+/* Full width */
+@media all and (min-width: 801px) {
+  .full-width #promotions-secondary .secondary-tools .slick-track {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;    
+  }
+  .full-width #promotions-secondary .secondary-tools .slick-list  li {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;    
+    margin: 0px 10px;
+    height: auto;
+  }
+  .full-width #promotions-secondary .secondary-tools li:first-of-type {
+    margin-left: 0px;
+  }
+  .full-width #promotions-secondary .secondary-tools li:last-of-type {
+    margin-right: 0px;
+  }
+}
+@media all and (min-width: 1025px) {
+  .full-width #promotions-secondary .secondary-tools li:first-of-type {
+    margin-left: 0px;
+  }
+  .full-width #promotions-secondary .secondary-tools li:last-of-type {
+    margin-right: 0px;
+  }
+}  
