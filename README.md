@@ -1,5 +1,5 @@
-# ims_patterns
-Code repository for iMS patterns
+# iMarket Site Pattern Code Repository
+*Code repository for iMS patterns*
 
 The Repository is broken into sections corresponding to blocks that make up iMarket sites. Each section contains multiple variations of tested and vetted blocks that can be used to match code to the design file provided.
 
